@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+    text-align: center;
+    background-color: #a7bbc7;
+}
+
+#appBar {
+    background-color: #da7f8f;
+    text-align: center; 
+    font-family: 'Niconne', cursive;
+    font-size: 40px;
+    padding: 10px;
+    margin: 0px;
+    position: relative;
+}
+
+#hintIcon {
+    border: none;
+    border-radius: 50%;
+    background-color: #da7f8f;
+    padding: 7px 10px;
+    font-size: 25px;
+    display: inline-flex;
+    position: absolute;
+    right: 2%;
+    top: 15px;
+}
+
+#hintIcon:hover {
+    background-color: #cc7181;
+}
+
+#hintIcon:hover + #hints {
+    visibility: visible;
+    opacity: 1;
+}
+
+#hints {
+    visibility: hidden;
+    position: absolute;
+    text-align: left;
+    font-size: 23px;
+    right: 2%;
+    background-color: #e1e5ea;
+    padding: 12px 13px 12px 36px;
+    border-radius: 5%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    box-shadow: 2px 2px 10px slategrey;
+}
+
+#mainArea {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    width: 75%;
+    height: 67%;
+    border-radius: 10px;
+    margin: 40px auto;
+    background-color: #e1e5ea;
+    box-shadow: 5px 5px 20px slategrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (min-width:  800px) {
+    #mainArea {
+        width: 600px;
+    }
+}
+
+#inputText {
+    border: none;
+    border-radius: 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#audioArea {
+    padding-bottom: 10px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.recordButton {
+    font-size: 30px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px 10px 0;
+    background-color: #f094a4;
+    border-radius: 50%;
+    display: inline;
+}
+
+#recordButton:hover {
+    background-color: #8ca5f9;
+    cursor: pointer;
+}
+
+.recordButtonSelected {
+    font-size: 30px;
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    display: inline;
+    background-color: #8ca5f9;
+}
+
+textarea {
+    resize: none;
+    width: 75%;
+    background-color: #f4eee8;
+    padding: 20px;
+    box-shadow: 0px 0px 10px slategrey;
+}
+
+#submitButton {
+    margin-top: 20px;
+    padding: 15px 0 15px 0;
+    border: none;
+    width: 75%;
+    border-radius: 5px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #f094a4;
+}
+
+#submitButton:hover {
+    background-color: #ffa9b8;
+}
+
+#footer {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 15px;
+    opacity: 0.7;
+    bottom: 12px;
+}
+

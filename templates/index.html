@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64b822dc40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <title>Grammer Check</title>
+</head>
+<body>
+    <div id="appBar">
+        Check  Your  Grammar  Here
+        <button id="hintIcon"><i class="fa fa-question" aria-hidden="true"></i></button>
+        <ul id="hints">
+            <li>Click on the mic icon</li>
+            <li>Start Speaking</li>
+            <li>or directly type it
+            </li>
+            <li>Your words will be visible</li>
+            <li>Click check Grammer
+            </li>
+        </ul>
+    </div>
+    <div id="mainArea">
+        <div id="audioArea">
+            <button class="recordButton" id="recordButton"><i class="fas fa-microphone"></i></button>
+            <h1 id="recordButtonText">Click here to speak....</h1>
+        </div>
+        <form action="/" method="POST">
+            <textarea name="inputText" id="inputText" cols="60" rows="20" placeholder="enter here....">{{ inputText }}</textarea>
+            <button id="submitButton" type="submit">Check Grammer</button>
+        </form>
+    </div>
+    <h2 id="footer">Made by Tilotham & Sridhar</h2>
+</body>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>
